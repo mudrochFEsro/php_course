@@ -2,7 +2,7 @@
 $page_title = "Dynamic PHP page";
 $current_time = date("H:i:s");
 ?>
-<html lang="">
+<html lang="sk">
 <head>
     <title>
         <?= $page_title ?>

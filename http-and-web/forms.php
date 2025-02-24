@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     die;
 }
 ?>
-<html lang="">
+<html lang="sk">
 <body>
 <h1>
     Please submit the forms

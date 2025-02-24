@@ -22,7 +22,7 @@ $visitMessage = "This is your " . $_SESSION['visits'] . " visit.";
 
 ?>
 
-<html lang="">
+<html lang="sk">
 <body>
 <?php if (!$hasCookie): ?>
     <form method="POST" >
