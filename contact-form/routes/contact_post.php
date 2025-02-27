@@ -9,4 +9,5 @@ if (empty($name) || empty($email) || empty($message)) {
 if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     badRequest('Email address is not valid');
 }
-var_dump($email, $name, $message);die;
+
+connectDb();

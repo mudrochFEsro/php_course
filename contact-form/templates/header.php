@@ -109,11 +109,11 @@
         textarea:not([rows]) {
             min-height: 10em;
         }
-        input,textarea{
+        input,textarea,button{
             padding: 0.15em;
             margin-top: 0.15em;
             margin-bottom: 0.15em;
-
+            background-color: #bbbbbb;
         }
 
         /* Anything that has been anchored to should have extra scroll margin */
