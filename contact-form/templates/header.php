@@ -134,6 +134,14 @@
         button {
             cursor: pointer
         }
+        ::selection{
+            background: blue;
+            color: white;
+        }
+        ::-moz-selection {
+            background: blue;
+            color: white;
+        }
     </style>
 </head>
 
