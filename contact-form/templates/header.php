@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
         /* Box sizing rules */
         *,
@@ -18,6 +21,7 @@
             -moz-text-size-adjust: none;
             -webkit-text-size-adjust: none;
             text-size-adjust: none;
+            font-family: Roboto Mono, "Courier New", serif;
         }
 
         /* Remove default margin in favour of better control in authored CSS */
@@ -47,7 +51,7 @@
             max-width: 60%;
             margin-left: auto;
             margin-right: auto;
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
         /* Set shorter line heights on headings and interactive elements */
@@ -104,6 +108,14 @@
         /* Anything that has been anchored to should have extra scroll margin */
         :target {
             scroll-margin-block: 5ex;
+        }
+        textarea,input{
+            border-radius: 0;
+            border: 2px solid black;
+        }
+        *:focus{
+            border-radius: 0;
+            outline: 4px solid blue;
         }
     </style>
 </head>
