@@ -7,7 +7,8 @@
     <title>Contact Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet">
     <style>
         /* Box sizing rules */
         *,
@@ -18,6 +19,10 @@
 
         /* Prevent font size inflation */
         html {
+            background-color: #00afa8;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
             -moz-text-size-adjust: none;
             -webkit-text-size-adjust: none;
             text-size-adjust: none;
@@ -104,18 +109,30 @@
         textarea:not([rows]) {
             min-height: 10em;
         }
+        input,textarea{
+            padding: 0.15em;
+            margin-top: 0.15em;
+            margin-bottom: 0.15em;
+
+        }
 
         /* Anything that has been anchored to should have extra scroll margin */
         :target {
             scroll-margin-block: 5ex;
         }
-        textarea,input{
+
+        textarea, input, button {
             border-radius: 0;
             border: 2px solid black;
         }
-        *:focus{
+
+        *:focus {
             border-radius: 0;
             outline: 4px solid blue;
+        }
+
+        button {
+            cursor: pointer
         }
     </style>
 </head>
