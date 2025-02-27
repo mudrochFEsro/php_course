@@ -31,7 +31,12 @@ function getFilePath(string $uri, string $method): string
     echo $message;
     exit;
 }
-
+#[NoReturn] function serverError(string $message = 'Server error'): void
+{
+    http_response_code(500);
+    echo $message;
+    exit;
+}
 #[NoReturn] function dispatch(string $uri, string $method): void
 {
     $uri = normalizeUri($uri);
