@@ -10,7 +10,7 @@ $messages = $data['messages'];
         <?php foreach ($messages as $message) : ?>
             <h3><?= htmlspecialchars($message['name']) ?></h3>
             <p><?= htmlspecialchars($message['email']) ?></p>
-            <p><?=nl2br(htmlspecialchars($message['message']))?></p>
+            <p><?= nl2br(htmlspecialchars($message['message']))?></p>
             <small>Posted on: <?= htmlspecialchars($message['create_at']) ?></small>
         <?php endforeach; ?>
     <?php endif; ?>
