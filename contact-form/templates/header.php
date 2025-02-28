@@ -152,5 +152,7 @@
 <nav>
     <a href="/">Home</a>
     <a href="/contact">Contact Form</a>
+    <a href="/guestbook">Contact Form</a>
+
 </nav>
 <main>

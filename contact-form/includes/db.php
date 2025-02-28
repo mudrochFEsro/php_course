@@ -16,13 +16,22 @@ function loadSchema(PDO $pdo, string $schemaFile): void
     echo "Schema file loaded successfully\n";
 }
 
-function insertMessage(PDO $pdo, string $name, string $email, string $message): bool{
-$sql = "INSERT INTO messages (name, email, message) VALUES (:name, :email , :message)";
-$stmt = $pdo->prepare($sql);
-$stmt->execute([
-    ':name' => $name,
-    ':email' => $email,
-    ':message' => $message
-]);
-return $stmt->rowCount() > 0;
+function insertMessage(PDO $pdo, string $name, string $email, string $message): bool
+{
+    $sql = "INSERT INTO messages (name, email, message) VALUES (:name, :email , :message)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        ':name' => $name,
+        ':email' => $email,
+        ':message' => $message
+    ]);
+    return $stmt->rowCount() > 0;
 }
+
+function getMessages(PDO $pdo)
+{
+    $sql = "SELECT * FROM messages ORDER BY create_at DESC";
+    $stmt = $pdo->query($sql);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
